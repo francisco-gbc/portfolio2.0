@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font: inherit;
+    outline:0;
+   /* vertical-align:baseline;*/
+   /*display:flex;*/
+   font-family: 'Montserrat', sans-serif;
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --black30:rgb(30,30,30);
+    --black3040:rgb(30,30,30,0.4);
+    --white: rgb(255, 255, 255);
+
+}
+/*Geral------------*/
+
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*Remover realce azul em smartphones*/
+ 
+    user-select: none;
+}
+
+a{
+ color: inherit;   
+ text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+
+b{
+    font-weight: 700;
+}
+
+ 
+/*Animação de tela-------------------------
+
+.page-transition {
+    animation: slide-in 0.5s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+*/
+
+/*Scroll------------------------------*/
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:rgb(0,0,0,0.15);    
+    border-radius: 20px;       
+  }
+
+/*Corpo-------------------*/
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+
+}
+
+.hist{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.card{
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.5);
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-size: auto 105%;
+    box-shadow: 2px 2px 15px rgb(0,0,0,0.6);
+    transition: 1s;
+}
+
+.card:hover h2{
+    
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    transition: 1s;
+}
+
+.card:hover .legenda_card{
+    height: 27%;
+    transition: ease 1s;
+    opacity: 95%;
+}
+
+.card1{
+    background-image: url("../assets/imgs/1.png");
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.card2{
+    background-image: url("../assets/imgs/2.png");
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.img2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.card3{
+    background-image: url("../assets/imgs/3.png");
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.img1:hover{
+    transform:scale(1.2);
+}
+
+.legenda_card{
+    height: 30%;
+    width: 400px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease 0.5s;
+    
+}
+
+.legenda_card h2{
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+    transition: 1s;
+}
+
+.legenda_card p{
+    text-align: center;
+    max-width: 70%;
+    font-size: 0.8em;
+}
+
+.sobre{
+    background-color:rgb(30, 30, 30);
+    width: 160px;
+    height: 40px;
+
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+    transition: ease 0.5s;
+}
+
+.sobre p{
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+    
+}
+
+.sobre:hover{
+    opacity: 80%;
+    transition: ease 0.5s;
+}
+
+@media (max-width: 1300px){
+
+    .cards{
+        gap: 20px;
+    }
+    
+    .card{
+        border-radius: 20px;
+        width: 330px;
+        height: 500px;
+        transition: ease 0.5s;
+    }
+
+    .legenda_card{
+        height: 30%;
+        width: 340px;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (max-width: 1100px){
+
+    .cards{
+        flex-direction: column;
+        gap: 20px;
+        max-width: 95%;
+        flex-direction: column;
+    
+    }
+
+    .card{
+        border-radius: 20px;
+        width: 650px;
+        height: 400px;
+        transition: ease 0.5s;
+        
+        border-radius: 20px;
+        width: 100%;
+        height: 400px;
+        transition: ease 0.5s;
+    }
+
+    .card:hover{
+        cursor: pointer;
+        background-size: 105% auto;
+        
+        transition: ease 0.5s;
+    }
+
+    .legenda_card{
+        height: 40%;
+        width: 650px;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 40%;
+        max-width: 100%;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .card1{
+        background-size: 100% auto;
+        background-position: center;
+    }
+    
+    .card2{
+        background-size: 100% auto;
+        background-position: center;
+    }
+    
+    .card3{
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    .card:hover .legenda_card{
+        height: 42%;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .legenda_card p{
+        font-size: 0.7em;
+        max-width: 80%;
+    }
+
+}
+
+

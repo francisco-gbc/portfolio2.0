@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font: inherit;
+    outline:0;
+   /* vertical-align:baseline;*/
+   /*display:flex;*/
+   font-family: 'Montserrat', sans-serif;
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --black30:rgb(30,30,30);
+    --black3040:rgb(30,30,30,0.4);
+    --white: rgb(255, 255, 255);
+
+}
+/*Geral------------*/
+
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*Remover realce azul em smartphones*/
+ 
+    user-select: none;
+}
+
+a{
+ color: inherit;   
+ text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+
+b{
+    font-weight: 700;
+}
+
+
+/*Animação de tela-------------------------
+
+.page-transition {
+    animation: slide-in 0.5s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }*/
+
+/*Scroll------------------------------*/
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:rgb(0,0,0,0.15);    
+    border-radius: 20px;       
+  }
+
+
+/*Corpo-------------------*/
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+max-width: 900px;
+}
+
+.hist{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+h1{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform:  uppercase;
+    text-align: center;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform:  uppercase;
+  text-align: center;
+}
+
+.legenda_conteudo{
+    text-align: center;;
+}
+
+.descricao{
+  margin-top: 20px;
+  text-align:justify;
+  text-align-last: center;
+}
+
+p{
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/*Motion_Design---------------------------------*/
+
+.motion .demoreel{
+  border-radius: 20px;
+  box-shadow: 2px 2px 45px rgb(0,0,0,0.5);
+  transition: ease 1s;
+}
+.motion .demoreel:hover{
+  box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+  transition: ease 0.5s;
+}
+
+.motion{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.icon_animation{
+  margin-top: 20px;
+  width: 500px;
+  max-width: 100%;
+}
+
+
+
+/*Contato------------------*/
+
+.contato{
+    background-color:rgb(30, 30, 30);
+    width: 160px;
+    height: 40px;
+
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+.contato p{
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+    
+}
+
+.contato:hover{
+    opacity: 80%;
+}
+
+.card h2{
+  font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+    transition: 1s;
+}
+
+.card:hover h2{
+    
+  letter-spacing: 0.1em;
+  transition: 1s;
+}
+
+#start_menu3{
+  cursor: pointer;
+}
+
+
+
